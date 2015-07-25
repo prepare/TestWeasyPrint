@@ -14,6 +14,7 @@
     <InterpreterId />
     <InterpreterVersion />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <CommandLineArguments>tests/0_acid1_dev/00.ACID1.htm tests/0_acid1_dev/00.ACID1.pdf</CommandLineArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
