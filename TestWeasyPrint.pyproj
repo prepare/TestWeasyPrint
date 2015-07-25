@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45df0164-312b-48ba-8a45-9e2d39adec54}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>weasyprint.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="docs\weasyprint-navigator.png" />
+    <Content Include="docs\_static\box_model.png" />
+    <Content Include="docs\_static\custom.css" />
+    <Content Include="docs\_static\icon.ico" />
+    <Content Include="docs\_static\logo.png" />
+    <Content Include="pytest.ini" />
+    <Content Include="tox.ini" />
+    <Content Include="weasyprint\css\html5_ua.css" />
+    <Content Include="weasyprint\css\tests_ua.css" />
+    <Content Include="weasyprint\tests\resources\acid2-reference.html" />
+    <Content Include="weasyprint\tests\resources\acid2-test.html" />
+    <Content Include="weasyprint\tests\resources\blue.jpg" />
+    <Content Include="weasyprint\tests\resources\doc1.html" />
+    <Content Include="weasyprint\tests\resources\doc1_UTF-16BE.html" />
+    <Content Include="weasyprint\tests\resources\icon.png" />
+    <Content Include="weasyprint\tests\resources\latin1-test.css" />
+    <Content Include="weasyprint\tests\resources\logo_small.png" />
+    <Content Include="weasyprint\tests\resources\mini_ua.css" />
+    <Content Include="weasyprint\tests\resources\pattern.gif" />
+    <Content Include="weasyprint\tests\resources\pattern.palette.png" />
+    <Content Include="weasyprint\tests\resources\pattern.png" />
+    <Content Include="weasyprint\tests\resources\pattern.svg" />
+    <Content Include="weasyprint\tests\resources\really-a-png.svg" />
+    <Content Include="weasyprint\tests\resources\really-a-svg.png" />
+    <Content Include="weasyprint\tests\resources\sheet2.css" />
+    <Content Include="weasyprint\tests\resources\sub_directory\sheet1.css" />
+    <Content Include="weasyprint\tests\resources\user.css" />
+    <Content Include="weasyprint\tests\resources\utf8-test.css" />
+    <Content Include="weasyprint\tests\test_web\static\spinner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="docs\conf.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="weasyprint.py" />
+    <Compile Include="weasyprint\compat.py" />
+    <Compile Include="weasyprint\css\computed_values.py" />
+    <Compile Include="weasyprint\css\properties.py" />
+    <Compile Include="weasyprint\css\validation.py" />
+    <Compile Include="weasyprint\css\__init__.py" />
+    <Compile Include="weasyprint\document.py" />
+    <Compile Include="weasyprint\draw.py" />
+    <Compile Include="weasyprint\formatting_structure\boxes.py" />
+    <Compile Include="weasyprint\formatting_structure\build.py" />
+    <Compile Include="weasyprint\formatting_structure\counters.py" />
+    <Compile Include="weasyprint\formatting_structure\__init__.py" />
+    <Compile Include="weasyprint\html.py" />
+    <Compile Include="weasyprint\images.py" />
+    <Compile Include="weasyprint\layout\absolute.py" />
+    <Compile Include="weasyprint\layout\backgrounds.py" />
+    <Compile Include="weasyprint\layout\blocks.py" />
+    <Compile Include="weasyprint\layout\float.py" />
+    <Compile Include="weasyprint\layout\inlines.py" />
+    <Compile Include="weasyprint\layout\markers.py" />
+    <Compile Include="weasyprint\layout\min_max.py" />
+    <Compile Include="weasyprint\layout\pages.py" />
+    <Compile Include="weasyprint\layout\percentages.py" />
+    <Compile Include="weasyprint\layout\preferred.py" />
+    <Compile Include="weasyprint\layout\replaced.py" />
+    <Compile Include="weasyprint\layout\tables.py" />
+    <Compile Include="weasyprint\layout\__init__.py" />
+    <Compile Include="weasyprint\logger.py" />
+    <Compile Include="weasyprint\navigator.py" />
+    <Compile Include="weasyprint\pdf.py" />
+    <Compile Include="weasyprint\stacking.py" />
+    <Compile Include="weasyprint\tests\testing_utils.py" />
+    <Compile Include="weasyprint\tests\test_api.py" />
+    <Compile Include="weasyprint\tests\test_boxes.py" />
+    <Compile Include="weasyprint\tests\test_css.py" />
+    <Compile Include="weasyprint\tests\test_css_validation.py" />
+    <Compile Include="weasyprint\tests\test_draw.py" />
+    <Compile Include="weasyprint\tests\test_layout.py" />
+    <Compile Include="weasyprint\tests\test_pdf.py" />
+    <Compile Include="weasyprint\tests\test_stacking.py" />
+    <Compile Include="weasyprint\tests\test_text.py" />
+    <Compile Include="weasyprint\tests\test_web\run.py" />
+    <Compile Include="weasyprint\tests\test_web\__init__.py" />
+    <Compile Include="weasyprint\tests\__init__.py" />
+    <Compile Include="weasyprint\text.py" />
+    <Compile Include="weasyprint\urls.py" />
+    <Compile Include="weasyprint\__init__.py" />
+    <Compile Include="weasyprint\__main__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="docs" />
+    <Folder Include="docs\_static" />
+    <Folder Include="weasyprint" />
+    <Folder Include="weasyprint\css" />
+    <Folder Include="weasyprint\formatting_structure" />
+    <Folder Include="weasyprint\layout" />
+    <Folder Include="weasyprint\tests" />
+    <Folder Include="weasyprint\tests\resources" />
+    <Folder Include="weasyprint\tests\resources\sub_directory" />
+    <Folder Include="weasyprint\tests\test_web" />
+    <Folder Include="weasyprint\tests\test_web\static" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

@@ -42,6 +42,7 @@ def _get_matrix(box):
     #  but do not apply to elements which may be split into
     #  multiple inline-level boxes."
     # http://www.w3.org/TR/css3-2d-transforms/#introduction
+    
     if box.style.transform and not isinstance(box, boxes.InlineBox):
         border_width = box.border_width()
         border_height = box.border_height()
